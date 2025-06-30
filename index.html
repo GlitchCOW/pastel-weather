@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Pastel-Weather</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
         <main>
             <div class="weather-app-data">
                 <div>
-                    <h1 class="weather-city">Lethbridge</h1>
+                    <h1 class="weather-city" id="city">Lethbridge</h1>
                     <p class="weather-details">Monday 10:46 , sunny
                     </br>
                     sunny, High <strong>29</strong> to <strong>30</strong>
@@ -25,7 +26,7 @@
                 </div>
                 <div class="weather-app-temperature-container">
                     <div class="weather-icon">🌤️</div>
-                    <div class="weather-temperature">20</div>
+                    <div class="weather-temperature" id="temperature">20</div>
                     <div class="weatehr-unit">°C</div>
                 </div>
             </div>
